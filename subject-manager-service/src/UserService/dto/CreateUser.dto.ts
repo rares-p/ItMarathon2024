@@ -1,10 +1,16 @@
-import {UserRole} from "../user.entity";
-import {IsEnum, IsString} from "class-validator";
+import {IsEnum, IsNotEmpty, IsNumber, IsOptional, IsString} from "class-validator";
+import {Years} from "../entities/student.entity";
 
 export class CreateUserDto {
     @IsString()
+    @IsNotEmpty()
+    identifier: string;
+
+    @IsString()
+    @IsNotEmpty()
     username: string;
 
     @IsString()
+    @IsNotEmpty()
     password: string;
 }

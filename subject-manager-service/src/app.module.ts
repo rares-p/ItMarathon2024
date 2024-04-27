@@ -6,6 +6,7 @@ import {TypeOrmConfigService} from "./Database/TypeormConfig";
 import {DataSource, DataSourceOptions} from "typeorm";
 import { join } from "path";
 import {UserModule} from "./UserService/user.module";
+import {IdentifierModule} from "./IdentifierService/identifier.module";
 
 const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
         useClass: TypeOrmConfigService,
@@ -66,7 +67,9 @@ const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
             }) as any,
             inject: [ConfigService]
         }),
-        UserModule
+        UserModule,
+        IdentifierModule,
+
     ],
 })
 export class AppModule {

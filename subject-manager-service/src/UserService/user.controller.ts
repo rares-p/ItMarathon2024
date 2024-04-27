@@ -10,7 +10,16 @@ export class UserController {
 
     @Post("register")
     async register(@Body() data: CreateUserDto) {
-        return await this.userService.create(data.username, data.password);
+        const response = await this.userService.create(data.identifier,
+            data.username, data.password);
+
+        if (response == undefined) {
+            throw new HttpException("Unexpected error occurred", HttpStatus.INTERNAL_SERVER_ERROR);
+        } else if (typeof response == "string") {
+            throw new HttpException(response, HttpStatus.BAD_REQUEST);
+        }
+
+        return response;
     }
 
     @Post("login")

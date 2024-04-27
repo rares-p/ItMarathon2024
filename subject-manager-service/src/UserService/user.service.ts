@@ -1,33 +1,67 @@
-import {Injectable} from "@nestjs/common";
+import {forwardRef, Inject, Injectable} from "@nestjs/common";
 import {InjectRepository} from "@nestjs/typeorm";
 import {Repository} from 'typeorm';
-import {UserEntity, UserRole} from "./user.entity";
+import {UserEntity, UserRole} from "./entities/user.entity";
+import {StudentEntity, Years} from "./entities/student.entity";
+import {UUID} from "../Utils/Types";
+import {IdentifierService} from "../IdentifierService/identifier.service";
 
 @Injectable()
 export class UserService {
     constructor(
         @InjectRepository(UserEntity)
         private readonly userRepository: Repository<UserEntity>,
-    ) {}
+        @InjectRepository(StudentEntity)
+        private readonly studentRepository: Repository<StudentEntity>,
+        private readonly identifierService: IdentifierService
+    ) {
+    }
 
-    async create(username: string, password: string) {
-        let identifier = "";
-        for (let i = 0; i < 32; ++i) {
-            identifier += Math.floor(Math.random() * 10).toString()
+    async create(identifier: string, username: string, password: string) {
+        try {
+            const completeIdentifier = await this.identifierService.getOne(identifier);
+            if (completeIdentifier.isUsed == true)
+                return "Identifier already used!";
+
+            const user = this.userRepository.create({
+                username: username,
+                password: password,
+                identifier: identifier,
+                role: completeIdentifier.role
+            });
+            await this.userRepository.save(user);
+
+            if (completeIdentifier.role == UserRole.NORMAL) {
+                const student = await this.studentRepository.findOneBy({
+                    id: completeIdentifier.studentId
+                });
+                student.userId = user.id;
+                await this.studentRepository.save(student);
+            }
+            await this.identifierService.use(completeIdentifier.value);
+
+            return {
+                id: user.id,
+            }
+        } catch (err) {
+            return undefined;
         }
+    }
 
-        const user = this.userRepository.create({
-            username: username,
-            password: password,
-            identifier: identifier,
-            role: UserRole.NORMAL
-        })
+    async createStudent(name: string, credits: number, grade: number, year: Years) {
+        try {
+            const student = this.studentRepository.create({
+                name: name,
+                credits: credits,
+                grade: grade,
+                year: year
+            });
 
-        await this.userRepository.save(user);
+            await this.studentRepository.save(student);
 
-        return {
-            id: user.id,
-            identifier: user.identifier
+            return student.id;
+        } catch (err) {
+            return undefined;
         }
     }
 
@@ -45,6 +79,20 @@ export class UserService {
                 identifier: user.identifier,
                 role: user.role
             };
+        } catch (err) {
+            return undefined;
+        }
+    }
+
+    async getRole(userId: UUID): Promise<UserRole | undefined> {
+        try {
+            const user = await this.userRepository.findOne({
+                where: {
+                    id: userId
+                }
+            });
+
+            return user.role;
         } catch (err) {
             return undefined;
         }

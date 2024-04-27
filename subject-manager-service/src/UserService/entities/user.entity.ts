@@ -1,12 +1,10 @@
 import {
     BeforeInsert,
     Column,
-    CreateDateColumn,
-    DeleteDateColumn,
     Entity, Index,
     PrimaryGeneratedColumn,
-    UpdateDateColumn,
 } from 'typeorm';
+import {UUID} from "../../Utils/Types";
 
 export enum UserRole {
     NORMAL,
@@ -18,7 +16,7 @@ export enum UserRole {
 })
 export class UserEntity {
     @PrimaryGeneratedColumn("uuid")
-    id: `${string}-${string}-${string}-${string}-${string}`;
+    id: UUID;
     @BeforeInsert() genarate(){ this.id=crypto.randomUUID()}
 
     @Column({ unique: true})
