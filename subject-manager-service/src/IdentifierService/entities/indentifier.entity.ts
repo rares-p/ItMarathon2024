@@ -24,7 +24,7 @@ export class IdentifierEntity {
     @Column({
         type: "enum",
         enum: UserRole,
-        default: UserRole.NORMAL
+        default: UserRole.STUDENT
     })
     role: UserRole;
 

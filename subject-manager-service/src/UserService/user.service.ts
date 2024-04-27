@@ -1,4 +1,4 @@
-import {forwardRef, Inject, Injectable} from "@nestjs/common";
+import {Injectable} from "@nestjs/common";
 import {InjectRepository} from "@nestjs/typeorm";
 import {Repository} from 'typeorm';
 import {UserEntity, UserRole} from "./entities/user.entity";
@@ -31,7 +31,7 @@ export class UserService {
             });
             await this.userRepository.save(user);
 
-            if (completeIdentifier.role == UserRole.NORMAL) {
+            if (completeIdentifier.role == UserRole.STUDENT) {
                 const student = await this.studentRepository.findOneBy({
                     id: completeIdentifier.studentId
                 });
@@ -93,6 +93,19 @@ export class UserService {
             });
 
             return user.role;
+        } catch (err) {
+            return undefined;
+        }
+    }
+
+    async getStudent(studentId: UUID) {
+        try {
+            const student = await this.userRepository.findOneBy({
+                id: studentId,
+                role: UserRole.STUDENT
+            })
+
+            return student;
         } catch (err) {
             return undefined;
         }

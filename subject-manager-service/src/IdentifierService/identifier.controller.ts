@@ -1,4 +1,4 @@
-import {Body, Controller, Get, HttpException, HttpStatus, Post, Put, UseGuards} from "@nestjs/common";
+import {Body, Controller, Get, HttpException, HttpStatus, Post, Put, Query, UseGuards} from "@nestjs/common";
 import {IdentifierService} from "./identifier.service";
 import {CreateIdentifierDto} from "./dto/CreateIdentifierDto";
 import {UseIdentifierDto} from "./dto/UseIdentifier.dto";
@@ -36,7 +36,7 @@ export class IdentifierController {
 
     @Get("all")
     @UseGuards(IsAdmin)
-    async getAll(@Body() data: GetAllIdentifiersDto) {
+    async getAll(@Query() data: GetAllIdentifiersDto) {
         const response = await this.identifierService.getAll();
 
         return {

@@ -23,7 +23,7 @@ export class IdentifierService {
                 role: role
             });
 
-            if (role == UserRole.NORMAL) {
+            if (role == UserRole.STUDENT) {
                 if (name == undefined || credits == undefined || grade == undefined || year == undefined)
                     return "Missing fields for creating a student account!";
 

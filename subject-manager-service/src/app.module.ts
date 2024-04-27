@@ -7,6 +7,7 @@ import {DataSource, DataSourceOptions} from "typeorm";
 import { join } from "path";
 import {UserModule} from "./UserService/user.module";
 import {IdentifierModule} from "./IdentifierService/identifier.module";
+import { LoggerModule } from 'nestjs-pino';
 
 const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
         useClass: TypeOrmConfigService,
@@ -17,6 +18,7 @@ const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
 
 @Module({
     imports: [
+        LoggerModule.forRoot(),
         ConfigModule.forRoot({
             load: [databaseConfig],
             envFilePath: [".env"],

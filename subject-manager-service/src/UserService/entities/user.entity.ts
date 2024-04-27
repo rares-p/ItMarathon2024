@@ -7,7 +7,7 @@ import {
 import {UUID} from "../../Utils/Types";
 
 export enum UserRole {
-    NORMAL,
+    STUDENT,
     ADMIN
 }
 
@@ -29,7 +29,7 @@ export class UserEntity {
     @Column({
         type: "enum",
         enum: UserRole,
-        default: UserRole.NORMAL
+        default: UserRole.STUDENT
     })
     role: UserRole;
 
