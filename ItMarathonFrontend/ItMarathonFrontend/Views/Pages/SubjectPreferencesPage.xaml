@@ -5,7 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ItMarathonFrontend.Views.Pages"
       xmlns:models="clr-namespace:ItMarathonFrontend.Models"
+      xmlns:subjectModels="clr-namespace:ItMarathonFrontend.Models.Subject"
       xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:helpers="clr-namespace:ItMarathonFrontend.Helpers"
       Title="Subject Preferences"
       d:DataContext="{d:DesignInstance local:SubjectPreferencesPage,
                                   IsDesignTimeCreatable=False}"
@@ -16,8 +18,33 @@
       Foreground="{DynamicResource TextFillColorPrimaryBrush}"
       ScrollViewer.CanContentScroll="False"
       mc:Ignorable="d">
-
+    <Page.Resources>
+        <helpers:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Page.Resources>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TreeView Grid.Row="0" AllowDrop="True" ItemsSource="{Binding ViewModel.SubjectPackages}">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type subjectModels:SubjectPackage}" ItemsSource="{Binding Subjects}">
+                    <TextBlock Text="{Binding Name}" FontSize="16"/>
+                    <HierarchicalDataTemplate.ItemTemplate>
+                        <DataTemplate DataType="{x:Type subjectModels:Subject}">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox IsChecked="{Binding IsChecked}" IsEnabled="{Binding IsEnabled}" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Margin="10 0 0 0"/>
+                                    <ui:Button Appearance="Secondary" Icon="Fluent24" Content="View Description" VerticalAlignment="Center" Command="{Binding ViewDescriptionCommand}" Margin="10 0 0 0"/>
+                                </StackPanel>
+                                <TextBlock Text="{Binding Description}" Visibility="{Binding ViewDescription, Converter={StaticResource BooleanToVisibilityConverter}}" Margin="0 5 0 0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </HierarchicalDataTemplate.ItemTemplate>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+        <ui:Button Grid.Row="1" Content="Send Preferences"/>
     </Grid>
 </Page>

@@ -33,5 +33,17 @@ namespace ItMarathonFrontend.Views.Windows
 
             NavigationView.SetServiceProvider(serviceProvider);
         }
+
+        private void SwitchToLogIn(object sender, RoutedEventArgs e)
+        {
+            LoginForm.Visibility = Visibility.Visible;
+            RegisterForm.Visibility = Visibility.Collapsed;
+        }
+
+        private void SwitchToRegister(object sender, RoutedEventArgs e)
+        {
+            LoginForm.Visibility = Visibility.Collapsed;
+            RegisterForm.Visibility = Visibility.Visible;
+        }
     }
 }

@@ -9,6 +9,7 @@ public partial class SubjectPreferencesViewModel : ObservableObject, INavigation
     private readonly ISnackbarService _snackbarService;
     private bool _isInitialized;
     [field: ObservableProperty] private List<Subject>? _subjects = null;
+    [ObservableProperty] private List<SubjectPackage> _subjectPackages = new();
 
     public SubjectPreferencesViewModel(ISubjectAdministrationService subjectAdministrationService, ISnackbarService snackbarService)
     {
@@ -24,21 +25,41 @@ public partial class SubjectPreferencesViewModel : ObservableObject, INavigation
 
     private async Task InitializeViewModel()
     {
-        var subjectsResponse = await _subjectAdministrationService.GetAllSubjects();
-
-        if (!subjectsResponse.Success)
+        for (int i = 0; i < 5; i++)
         {
-            _snackbarService.Show("Error!", subjectsResponse.Error);
-            return;
+            SubjectPackages.Add(new SubjectPackage()
+            {
+                Name = $"Package {i}",
+                Subjects = new List<Subject>()
+                {
+                    new Subject()
+                    {
+                        Description = "asd",
+                        Name = "test"
+                    },
+                    new Subject()
+                    {
+                        Description = "asd",
+                        Name = "test"
+                    }
+                }
+            });
         }
+        //var subjectsResponse = await _subjectAdministrationService.GetAllSubjects();
 
-        Subjects = new List<Subject>(subjectsResponse.Value.Select(subjectDto => new Subject()
-        {
-            Id = subjectDto.Id,
-            Name = subjectDto.Name,
-            Description = subjectDto.Description,
-            Package = subjectDto.Package
-        }));
+        //if (!subjectsResponse.Success)
+        //{
+        //    _snackbarService.Show("Error!", subjectsResponse.Error);
+        //    return;
+        //}
+
+        //Subjects = new List<Subject>(subjectsResponse.Value.Select(subjectDto => new Subject()
+        //{
+        //    Id = subjectDto.Id,
+        //    Name = subjectDto.Name,
+        //    Description = subjectDto.Description,
+        //    Package = subjectDto.Package
+        //}));
 
         _isInitialized = true;
     }

@@ -43,6 +43,12 @@ namespace ItMarathonFrontend.ViewModels.Windows
                 Content = "Subject Preferences",
                 Icon = new SymbolIcon {Symbol = SymbolRegular.TableSimpleCheckmark24},
                 TargetPageType = typeof(Views.Pages.SubjectPreferencesPage)
+            },
+            new NavigationViewItem()
+            {
+                Content = "Admin Dashboard",
+                Icon = new SymbolIcon {Symbol = SymbolRegular.DataUsageEdit24},
+                TargetPageType = typeof(Views.Pages.AdminPage)
             }
         };
 

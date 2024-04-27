@@ -46,12 +46,23 @@
 
         <Grid Visibility="{Binding ViewModel.IsUserLoggedIn, Converter={StaticResource BooleanToVisibilityConverterReversed}}"
               HorizontalAlignment="Center" VerticalAlignment="Center">
-            <StackPanel HorizontalAlignment="Center">
-                <TextBlock Text="UserName" HorizontalAlignment="Center"/>
-                <TextBox Margin="0 5 0 0 "/>
-                <TextBlock Text="Password" HorizontalAlignment="Center" Margin="0 5 0 0 "/>
-                <TextBox Margin="0 5 0 0 "/>
-                <ui:Button Content="Sign in" Appearance="Primary" Command="{Binding ViewModel.UserSignInCommand}" Margin="0 5 0 0 "/>
+            <StackPanel HorizontalAlignment="Center" x:Name="LoginForm">
+                <ui:TextBlock Text="UserName" HorizontalAlignment="Center"/>
+                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center"/>
+                <ui:TextBlock Text="Password" HorizontalAlignment="Center" Margin="0 5 0 0 "/>
+                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center"/>
+                <ui:Button Content="Sign in" Appearance="Primary" Command="{Binding ViewModel.UserSignInCommand}" HorizontalAlignment="Center" Margin="0 5 0 0 "/>
+                <ui:Button Content="Register" Appearance="Secondary" Click="SwitchToRegister" HorizontalAlignment="Center" Margin="0 20 0 0 "/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" x:Name="RegisterForm" Visibility="Collapsed">
+                <ui:TextBlock Text="Identifier" HorizontalAlignment="Center"/>
+                <ui:TextBox Margin="0 5 0 0" MinWidth="200" HorizontalAlignment="Center"/>
+                <ui:TextBlock Text="UserName" HorizontalAlignment="Center"  Margin="0 5 0 0 "/>
+                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center"/>
+                <ui:TextBlock Text="Password" HorizontalAlignment="Center" Margin="0 5 0 0 " />
+                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center"/>
+                <ui:Button Content="Register" Appearance="Primary" Command="{Binding ViewModel.UserSignInCommand}" HorizontalAlignment="Center" Margin="0 5 0 0 "/>
+                <ui:Button Content="Log In" Appearance="Secondary" Click="SwitchToLogIn" HorizontalAlignment="Center" Margin="0 20 0 0 "/>
             </StackPanel>
         </Grid>
 

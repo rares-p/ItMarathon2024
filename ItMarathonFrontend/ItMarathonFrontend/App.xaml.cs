@@ -59,6 +59,8 @@ namespace ItMarathonFrontend
                 services.AddSingleton<SettingsViewModel>();
                 services.AddSingleton<SubjectPreferencesPage>();
                 services.AddSingleton<SubjectPreferencesViewModel>();
+                services.AddSingleton<AdminPage>();
+                services.AddSingleton<AdminViewModel>();
 
                 services.AddSingleton<UserConfiguration>();
 
