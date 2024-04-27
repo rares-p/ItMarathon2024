@@ -2,5 +2,7 @@
 
 public class LoginDto
 {
-    public string Token { get; set; } = default!;
+    public string id { get; set; }
+    public string identifier { get; set; }
+    public string role { get; set; }
 }

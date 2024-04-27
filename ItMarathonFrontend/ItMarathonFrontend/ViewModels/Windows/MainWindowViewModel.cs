@@ -12,10 +12,16 @@ namespace ItMarathonFrontend.ViewModels.Windows
 {
     public partial class MainWindowViewModel : ObservableObject
     {
-        private IUserAuthenticationService _userAuthenticationService;
-        public MainWindowViewModel(IUserAuthenticationService userAuthenticationService)
+        private readonly IUserAuthenticationService _userAuthenticationService;
+        private readonly ISnackbarService _snackbarService;
+        [ObservableProperty]
+        private string _username;
+        [ObservableProperty]
+        private string _password;
+        public MainWindowViewModel(IUserAuthenticationService userAuthenticationService, ISnackbarService snackbarService)
         {
             _userAuthenticationService = userAuthenticationService;
+            _snackbarService = snackbarService;
         }
 
         [ObservableProperty] private bool _isUserLoggedIn = false;
@@ -70,10 +76,13 @@ namespace ItMarathonFrontend.ViewModels.Windows
         };
 
         [RelayCommand]
-        private void OnUserSignIn()
+        private async Task OnUserSignIn()
         {
-            IsUserLoggedIn = true;
-            _userAuthenticationService.LogIn("asd", "asd");
+            var loginResponse = await _userAuthenticationService.LogIn(Username, Password);
+            if (!loginResponse.Success)
+                _snackbarService.Show("Error!", loginResponse.Error);
+            else
+                IsUserLoggedIn = true;
         }
     }
 }

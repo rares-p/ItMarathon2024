@@ -47,10 +47,10 @@
         <Grid Visibility="{Binding ViewModel.IsUserLoggedIn, Converter={StaticResource BooleanToVisibilityConverterReversed}}"
               HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel HorizontalAlignment="Center" x:Name="LoginForm">
-                <ui:TextBlock Text="UserName" HorizontalAlignment="Center"/>
-                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center"/>
+                <ui:TextBlock Text="Username" HorizontalAlignment="Center" />
+                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center" Text="{Binding ViewModel.Username}"/>
                 <ui:TextBlock Text="Password" HorizontalAlignment="Center" Margin="0 5 0 0 "/>
-                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center"/>
+                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center" Text="{Binding ViewModel.Password}"/>
                 <ui:Button Content="Sign in" Appearance="Primary" Command="{Binding ViewModel.UserSignInCommand}" HorizontalAlignment="Center" Margin="0 5 0 0 "/>
                 <ui:Button Content="Register" Appearance="Secondary" Click="SwitchToRegister" HorizontalAlignment="Center" Margin="0 20 0 0 "/>
             </StackPanel>

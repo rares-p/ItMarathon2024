@@ -66,9 +66,9 @@ namespace ItMarathonFrontend
 
                 services.AddTransient<IUserAuthenticationService, UserAuthenticationService>();
                 services.AddTransient<ISubjectAdministrationService, SubjectAdministrationService>();
-                services.AddHttpClient("User", httpClient =>
+                services.AddHttpClient("Default", httpClient =>
                 {
-                    httpClient.BaseAddress = new Uri("http://www.asamerge.com");
+                    httpClient.BaseAddress = new Uri("http://192.168.85.178:3000/");
                 });
             }).Build();
 

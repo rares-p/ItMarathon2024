@@ -22,8 +22,8 @@ public class AdminService : IAdminService
     public async Task<Result<List<UserDto>>> GetAllUsersAsync()
     {
         var httpClient = _httpClientFactory.CreateClient("Default");
-        httpClient.DefaultRequestHeaders.Authorization =
-            new AuthenticationHeaderValue("Bearer", _userConfiguration.Token);
+        //httpClient.DefaultRequestHeaders.Authorization =
+        //    new AuthenticationHeaderValue("Bearer", _userConfiguration.Token);
         var getAllUsersResponse = await httpClient.GetAsync("/");    //URL
 
         if (getAllUsersResponse is null || !getAllUsersResponse.IsSuccessStatusCode)
@@ -47,8 +47,8 @@ public class AdminService : IAdminService
     public async Task<Result<User>> CreateUserAsync(User user)
     {
         var httpClient = _httpClientFactory.CreateClient("Default");
-        httpClient.DefaultRequestHeaders.Authorization =
-            new AuthenticationHeaderValue("Bearer", _userConfiguration.Token);
+        //httpClient.DefaultRequestHeaders.Authorization =
+        //    new AuthenticationHeaderValue("Bearer", _userConfiguration.Token);
         var data = new FormUrlEncodedContent(new[]
         {
             new KeyValuePair<string, string>("name", user.Name),
@@ -66,8 +66,8 @@ public class AdminService : IAdminService
     public async Task<Result<User>> CreateUserAsync(string identifier)
     {
         var httpClient = _httpClientFactory.CreateClient("Default");
-        httpClient.DefaultRequestHeaders.Authorization =
-            new AuthenticationHeaderValue("Bearer", _userConfiguration.Token);
+        //httpClient.DefaultRequestHeaders.Authorization =
+        //    new AuthenticationHeaderValue("Bearer", _userConfiguration.Token);
         var data = new FormUrlEncodedContent(new[]
         {
             new KeyValuePair<string, string>("identifier", identifier)
