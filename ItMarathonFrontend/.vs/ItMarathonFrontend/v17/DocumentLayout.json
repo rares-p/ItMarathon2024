@@ -1,12 +1,241 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\panai\\AppData\\Local\\Temp\\.vsdbgsrc\\12193583a01f4e6ba4fc42b1d7d2b6775e84fded511752ad7920139c271c979f\\CallSiteFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FDEE82-0089-49AE-9813-0BC08B439B83}|SubjectAdministration\\SubjectAdministration.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\subjectadministration\\services\\subjectadministrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FDEE82-0089-49AE-9813-0BC08B439B83}|SubjectAdministration\\SubjectAdministration.csproj|solutionrelative:subjectadministration\\services\\subjectadministrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\viewmodels\\windows\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\viewmodels\\windows\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\viewmodels\\pages\\subjectpreferencesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\viewmodels\\pages\\subjectpreferencesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\subjectpreferencespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\subjectpreferencespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\datapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\datapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\subjectpreferencespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\subjectpreferencespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\viewmodels\\pages\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\viewmodels\\pages\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\datapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\datapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 144,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataPage.xaml.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\DataPage.xaml.cs",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Pages\\DataPage.xaml.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\DataPage.xaml.cs",
+              "RelativeToolTip": "ItMarathonFrontend\\Views\\Pages\\DataPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:08:46.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataViewModel.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Pages\\DataViewModel.cs",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\ViewModels\\Pages\\DataViewModel.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Pages\\DataViewModel.cs",
+              "RelativeToolTip": "ItMarathonFrontend\\ViewModels\\Pages\\DataViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:10:08.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataPage.xaml",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\DataPage.xaml",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Pages\\DataPage.xaml",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\DataPage.xaml",
+              "RelativeToolTip": "ItMarathonFrontend\\Views\\Pages\\DataPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-27T10:06:24.92Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 256,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubjectAdministrationService.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\SubjectAdministration\\Services\\SubjectAdministrationService.cs",
+              "RelativeDocumentMoniker": "SubjectAdministration\\Services\\SubjectAdministrationService.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\SubjectAdministration\\Services\\SubjectAdministrationService.cs",
+              "RelativeToolTip": "SubjectAdministration\\Services\\SubjectAdministrationService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACsAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:15:04.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CallSiteFactory.cs",
+              "DocumentMoniker": "C:\\Users\\panai\\AppData\\Local\\Temp\\.vsdbgsrc\\12193583a01f4e6ba4fc42b1d7d2b6775e84fded511752ad7920139c271c979f\\CallSiteFactory.cs",
+              "ToolTip": "C:\\Users\\panai\\AppData\\Local\\Temp\\.vsdbgsrc\\12193583a01f4e6ba4fc42b1d7d2b6775e84fded511752ad7920139c271c979f\\CallSiteFactory.cs",
+              "ViewState": "AQIAAAwCAAAAAAAAAAAQwB8CAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:14:53.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Windows\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\ViewModels\\Windows\\MainWindowViewModel.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Windows\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ItMarathonFrontend\\ViewModels\\Windows\\MainWindowViewModel.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACwAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:12:50.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Windows\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Windows\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Windows\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ItMarathonFrontend\\Views\\Windows\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:12:46.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\App.xaml.cs",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\App.xaml.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\App.xaml.cs",
+              "RelativeToolTip": "ItMarathonFrontend\\App.xaml.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:12:21.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SubjectPreferencesViewModel.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Pages\\SubjectPreferencesViewModel.cs",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\ViewModels\\Pages\\SubjectPreferencesViewModel.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Pages\\SubjectPreferencesViewModel.cs",
+              "RelativeToolTip": "ItMarathonFrontend\\ViewModels\\Pages\\SubjectPreferencesViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:12:12.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SettingsPage.xaml.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\SettingsPage.xaml.cs",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Pages\\SettingsPage.xaml.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\SettingsPage.xaml.cs",
+              "RelativeToolTip": "ItMarathonFrontend\\Views\\Pages\\SettingsPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:08:40.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SettingsPage.xaml",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\SettingsPage.xaml",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Pages\\SettingsPage.xaml",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\SettingsPage.xaml",
+              "RelativeToolTip": "ItMarathonFrontend\\Views\\Pages\\SettingsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-27T10:08:39.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SubjectPreferencesPage.xaml.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\SubjectPreferencesPage.xaml.cs",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Pages\\SubjectPreferencesPage.xaml.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\SubjectPreferencesPage.xaml.cs",
+              "RelativeToolTip": "ItMarathonFrontend\\Views\\Pages\\SubjectPreferencesPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:07:52.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SubjectPreferencesPage.xaml",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\SubjectPreferencesPage.xaml",
+              "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Pages\\SubjectPreferencesPage.xaml",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\SubjectPreferencesPage.xaml",
+              "RelativeToolTip": "ItMarathonFrontend\\Views\\Pages\\SubjectPreferencesPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-27T10:06:29.82Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -4,6 +4,7 @@
 // All Rights Reserved.
 
 using System.Collections.ObjectModel;
+using Authentication.Contracts;
 using Wpf.Ui.Common;
 using Wpf.Ui.Controls;
 
@@ -11,6 +12,14 @@ namespace ItMarathonFrontend.ViewModels.Windows
 {
     public partial class MainWindowViewModel : ObservableObject
     {
+        private IUserAuthenticationService _userAuthenticationService;
+        public MainWindowViewModel(IUserAuthenticationService userAuthenticationService)
+        {
+            _userAuthenticationService = userAuthenticationService;
+        }
+
+        [ObservableProperty] private bool _isUserLoggedIn = false;
+
         [ObservableProperty]
         private string _applicationTitle = "WPF UI - ItMarathonFrontend";
 
@@ -28,6 +37,12 @@ namespace ItMarathonFrontend.ViewModels.Windows
                 Content = "Data",
                 Icon = new SymbolIcon { Symbol = SymbolRegular.DataHistogram24 },
                 TargetPageType = typeof(Views.Pages.DataPage)
+            },
+            new NavigationViewItem()
+            {
+                Content = "Subject Preferences",
+                Icon = new SymbolIcon {Symbol = SymbolRegular.TableSimpleCheckmark24},
+                TargetPageType = typeof(Views.Pages.SubjectPreferencesPage)
             }
         };
 
@@ -47,5 +62,12 @@ namespace ItMarathonFrontend.ViewModels.Windows
         {
             new MenuItem { Header = "Home", Tag = "tray_home" }
         };
+
+        [RelayCommand]
+        private void OnUserSignIn()
+        {
+            IsUserLoggedIn = true;
+            _userAuthenticationService.LogIn("asd", "asd");
+        }
     }
 }

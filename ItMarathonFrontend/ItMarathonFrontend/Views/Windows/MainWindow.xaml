@@ -20,7 +20,12 @@
     WindowBackdropType="Mica"
     WindowCornerPreference="Round"
     WindowStartupLocation="CenterScreen"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    xmlns:converter="clr-namespace:ItMarathonFrontend.Helpers">
+    <ui:FluentWindow.Resources>
+        <converter:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <converter:BooleanToVisibilityConverterReversed x:Key="BooleanToVisibilityConverterReversed" />
+    </ui:FluentWindow.Resources>
     <ui:FluentWindow.InputBindings>
         <KeyBinding
             Key="F"
@@ -39,6 +44,17 @@
             </ui:TitleBar.Icon>
         </ui:TitleBar>
 
+        <Grid Visibility="{Binding ViewModel.IsUserLoggedIn, Converter={StaticResource BooleanToVisibilityConverterReversed}}"
+              HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="UserName" HorizontalAlignment="Center"/>
+                <TextBox Margin="0 5 0 0 "/>
+                <TextBlock Text="Password" HorizontalAlignment="Center" Margin="0 5 0 0 "/>
+                <TextBox Margin="0 5 0 0 "/>
+                <ui:Button Content="Sign in" Appearance="Primary" Command="{Binding ViewModel.UserSignInCommand}" Margin="0 5 0 0 "/>
+            </StackPanel>
+        </Grid>
+
         <ui:NavigationView
             x:Name="NavigationView"
             Padding="42,0,42,0"
@@ -50,7 +66,8 @@
             MenuItemsSource="{Binding ViewModel.MenuItems, Mode=OneWay}"
             OpenPaneLength="310"
             PaneDisplayMode="Left"
-            TitleBar="{Binding ElementName=TitleBar, Mode=OneWay}">
+            TitleBar="{Binding ElementName=TitleBar, Mode=OneWay}"
+            Visibility="{Binding ViewModel.IsUserLoggedIn, Converter={StaticResource BooleanToVisibilityConverter}}">
             <ui:NavigationView.Header>
                 <ui:BreadcrumbBar x:Name="BreadcrumbBar" Margin="42,32,42,20" />
             </ui:NavigationView.Header>

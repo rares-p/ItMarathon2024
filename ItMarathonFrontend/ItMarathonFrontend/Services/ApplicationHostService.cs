@@ -62,7 +62,7 @@ namespace ItMarathonFrontend.Services
                 return;
             }
 
-            navigationWindow.NavigationView.Navigate(typeof(DashboardPage));
+            //navigationWindow.NavigationView.Navigate(typeof(DashboardPage));
         }
     }
 }
