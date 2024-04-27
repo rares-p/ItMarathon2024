@@ -15,7 +15,6 @@ export class CreateSubjectDto {
     @IsEnum(Years)
     year: Years;
 
-
     @IsNotEmpty()
     @IsNumber()
     packet: number;

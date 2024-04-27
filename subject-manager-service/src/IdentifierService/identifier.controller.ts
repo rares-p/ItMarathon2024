@@ -13,8 +13,8 @@ export class IdentifierController {
     @Post("create")
     @UseGuards(IsAdmin)
     async create(@Body() data: CreateIdentifierDto) {
-        const response = await this.identifierService.create(data.role, data.name,
-            data.credits, data.grade, data.year);
+        const response = await this.identifierService.create(parseInt(data.role), data.name,
+            parseInt(data.credits), parseInt(data.grade), parseInt(data.year));
 
         if (response == undefined)
             throw new HttpException("Unexpected error", HttpStatus.INTERNAL_SERVER_ERROR)

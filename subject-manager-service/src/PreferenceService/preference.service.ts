@@ -5,7 +5,7 @@ import {Repository} from "typeorm";
 import {UUID} from "../Utils/Types";
 import {UserService} from "../UserService/user.service";
 import {SubjectService} from "../SubjectService/subject.service";
-import {Years} from "../UserService/entities/student.entity";
+import {StudentEntity, Years} from "../UserService/entities/student.entity";
 import {StableMatchingService} from "../StableMatchingService/stableMatching.service";
 
 
@@ -14,8 +14,8 @@ export type Preference = {
 }
 
 type YearAndSubject = { year: Years, packet: number }
-type StudentPreferences = {
-    studentId: UUID,
+export type StudentPreferences = {
+    student: StudentEntity,
     preferences: Array<UUID>
 }
 
@@ -35,7 +35,7 @@ export class PreferenceService {
         }
 
         try {
-            const student = await this.userService.getStudent(studentId);
+            const student = await this.userService.getUser(studentId);
             if (student == undefined)
                 return "Student does not exist!";
 
@@ -73,12 +73,19 @@ export class PreferenceService {
         const completeMap: Map<Years, Map<number, Array<StudentPreferences>>> =
             new Map<Years, Map<number, Array<StudentPreferences>>>();
         const allPreferenceEntities = await this.preferenceRepository.find();
+        const studentsDetails = new Map<UUID, StudentEntity>;
 
         try {
             const checkedSubjects: Map<UUID, YearAndSubject> = new Map<UUID, YearAndSubject>();
 
             for (let i = 0; i < allPreferenceEntities.length; ++i) {
                 const preference = allPreferenceEntities[i];
+
+                let studentEntity = studentsDetails.get(preference.studentId);
+                if (studentEntity == undefined) {
+                    studentEntity = await this.userService.getStudent(preference.studentId);
+                    studentsDetails.set(preference.studentId, studentEntity);
+                }
 
                 let subject: YearAndSubject;
                 if (!checkedSubjects.has(preference.subjectId)) {
@@ -103,10 +110,10 @@ export class PreferenceService {
                 }
 
                 let packetPreferences = completeMap.get(year).get(subject.packet - 1);
-                let studentPreferences = packetPreferences.find(studentPreference => studentPreference.studentId == preference.studentId);
+                let studentPreferences = packetPreferences.find(studentPreference => studentPreference.student.id == preference.studentId);
                 if (studentPreferences == undefined) {
                     studentPreferences = {
-                        studentId: preference.studentId,
+                        student: studentsDetails.get(preference.studentId),
                         preferences: ["", "", "", ""] as any
                     }
                     packetPreferences.push();

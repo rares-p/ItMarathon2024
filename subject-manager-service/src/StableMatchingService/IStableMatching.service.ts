@@ -1,6 +1,7 @@
 import {UUID} from "../Utils/Types";
+import {StudentPreferences} from "../PreferenceService/preference.service";
 
 export interface IStableMatchingService {
-    stableMatch(preferences: Array<{studentId: UUID, preferences: Array<UUID>}>):
+    stableMatch(preferences: Array<StudentPreferences>):
         Promise<Array<{studentId: UUID, to: UUID}>>
 }

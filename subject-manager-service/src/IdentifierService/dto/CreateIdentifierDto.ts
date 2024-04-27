@@ -10,22 +10,22 @@ export class CreateIdentifierDto {
     userId: UUID
 
     @IsNotEmpty()
-    @IsEnum(UserRole)
-    role: UserRole
+    @IsString()
+    role: string
 
     @IsString()
     @IsOptional()
     name: string;
 
-    @IsNumber()
+    @IsString()
     @IsOptional()
-    credits: number;
+    credits: string;
 
-    @IsNumber()
+    @IsString()
     @IsOptional()
-    grade: number;
+    grade: string;
 
-    @IsEnum(Years)
+    @IsString()
     @IsOptional()
-    year: Years;
+    year: string;
 }

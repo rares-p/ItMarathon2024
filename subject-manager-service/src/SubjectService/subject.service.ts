@@ -25,6 +25,8 @@ export class SubjectService {
             })
 
             await this.subjectRepository.save(subject);
+
+            return true;
         } catch (err) {
             return undefined;
         }
