@@ -26,7 +26,15 @@ public class UserAuthenticationService : IUserAuthenticationService
             new KeyValuePair<string, string>("username", username),
             new KeyValuePair<string, string>("password", password),
         });
-        var result = await httpClient.PostAsync("/users/login", data).ConfigureAwait(false);
+        HttpResponseMessage result;
+        try
+        {
+            result = await httpClient.PostAsync("/users/login", data).ConfigureAwait(false);
+        }
+        catch(Exception e)
+        {
+            return new Result<LoginDto>(false, null!, e.Message);
+        }
 
         if (result.StatusCode == HttpStatusCode.NotFound)
             return new Result<LoginDto>(false, null!, "User not found");
@@ -41,7 +49,7 @@ public class UserAuthenticationService : IUserAuthenticationService
             if (response == null)
                 return new Result<LoginDto>(false, null!, "Unexpected response from the server");
 
-            _userConfiguration.Admin = response.role == "1";
+            _userConfiguration.Admin = response.role == 1;
             _userConfiguration.Id = response.id;
             _userConfiguration.Identifier = response.identifier;
         }
@@ -51,5 +59,10 @@ public class UserAuthenticationService : IUserAuthenticationService
         }
 
         return new Result<LoginDto>(true, response, "");
+    }
+
+    public Task<Result<LoginDto>> Register(string identifier, string username, string password)
+    {
+        throw new NotImplementedException();
     }
 }

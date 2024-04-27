@@ -34,7 +34,7 @@
                         <DataTemplate DataType="{x:Type subjectModels:Subject}">
                             <StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <CheckBox IsChecked="{Binding IsChecked}" IsEnabled="{Binding IsEnabled}" VerticalAlignment="Center"/>
+                                    <ComboBox SelectedValue="{Binding Priority}" ItemsSource="{Binding Priorities}" />
                                     <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Margin="10 0 0 0"/>
                                     <ui:Button Appearance="Secondary" Icon="Fluent24" Content="View Description" VerticalAlignment="Center" Command="{Binding ViewDescriptionCommand}" Margin="10 0 0 0"/>
                                 </StackPanel>
@@ -45,6 +45,6 @@
                 </HierarchicalDataTemplate>
             </TreeView.ItemTemplate>
         </TreeView>
-        <ui:Button Grid.Row="1" Content="Send Preferences"/>
+        <ui:Button Grid.Row="1" Content="Send Preferences" Command="{Binding ViewModel.SendPreferencesCommand}"/>
     </Grid>
 </Page>

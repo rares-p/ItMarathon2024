@@ -19,6 +19,8 @@ using Authentication.Contracts;
 using Authentication.Services;
 using Domain;
 using ItMarathonFrontend.Resources;
+using Services.Contracts;
+using Services.Services;
 using SubjectAdministration.Contracts;
 using SubjectAdministration.Services;
 
@@ -66,6 +68,7 @@ namespace ItMarathonFrontend
 
                 services.AddTransient<IUserAuthenticationService, UserAuthenticationService>();
                 services.AddTransient<ISubjectAdministrationService, SubjectAdministrationService>();
+                services.AddTransient<IAdminService, AdminService>();
                 services.AddHttpClient("Default", httpClient =>
                 {
                     httpClient.BaseAddress = new Uri("http://192.168.85.178:3000/");

@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using Authentication.Contracts;
 using Wpf.Ui.Common;
 using Wpf.Ui.Controls;
+using MessageBox = Wpf.Ui.Controls.MessageBox;
 
 namespace ItMarathonFrontend.ViewModels.Windows
 {
@@ -78,9 +79,19 @@ namespace ItMarathonFrontend.ViewModels.Windows
         [RelayCommand]
         private async Task OnUserSignIn()
         {
+            //IsUserLoggedIn = true;
+            //return;
             var loginResponse = await _userAuthenticationService.LogIn(Username, Password);
             if (!loginResponse.Success)
+            {
                 _snackbarService.Show("Error!", loginResponse.Error);
+                MessageBox error = new MessageBox()
+                {
+                    Title = "Error!",
+                    Content = loginResponse.Error
+                };
+                await error.ShowDialogAsync();
+            }
             else
                 IsUserLoggedIn = true;
         }

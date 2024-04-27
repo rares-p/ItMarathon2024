@@ -1,4 +1,6 @@
-﻿using ItMarathonFrontend.Models;
+﻿using Domain;
+using Domain.Dto;
+using ItMarathonFrontend.Models;
 using Services.Contracts;
 using Wpf.Ui.Controls;
 
@@ -9,6 +11,8 @@ namespace ItMarathonFrontend.ViewModels.Pages;
 public partial class AdminViewModel : ObservableObject, INavigationAware
 {
     private readonly IAdminService _adminService;
+    private readonly ISnackbarService _snackbarService;
+    private readonly UserConfiguration _userConfiguration;
     private bool _isInitialized;
     [ObservableProperty]
     private bool _isCreatedUserAdmin;
@@ -17,9 +21,11 @@ public partial class AdminViewModel : ObservableObject, INavigationAware
     [ObservableProperty]
     private List<User>? _users = null;
 
-    public AdminViewModel(IAdminService adminService)
+    public AdminViewModel(IAdminService adminService, ISnackbarService snackbarService, UserConfiguration userConfiguration)
     {
         _adminService = adminService;
+        _snackbarService = snackbarService;
+        _userConfiguration = userConfiguration;
     }
 
     public async void OnNavigatedTo()
@@ -53,9 +59,15 @@ public partial class AdminViewModel : ObservableObject, INavigationAware
     [RelayCommand]
     public async Task OnCreateUser()
     {
-        if (IsCreatedUserAdmin)
-            _adminService.CreateUserAsync(CreatedUser.Identifier);
+        if (!_userConfiguration.Admin)
+        {
+            _snackbarService.Show("Error!", $"Only admins can create users");
+            return;
+        }
+        Result<CreateUserDto> result = IsCreatedUserAdmin ? await _adminService.CreateAdminUserAsync() : await _adminService.CreateUserAsync(CreatedUser);
+        if(result.Success)
+            CreatedUser.Identifier = result.Value.identifier;
         else
-            _adminService.CreateUserAsync(CreatedUser);
+            _snackbarService.Show("Couldn't create user!", result.Error);
     }
 }
