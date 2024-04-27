@@ -3,44 +3,32 @@
   "WorkspaceRootPath": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\viewmodels\\pages\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\viewmodels\\pages\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\viewmodels\\pages\\subjectpreferencesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\viewmodels\\pages\\subjectpreferencesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\viewmodels\\windows\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\viewmodels\\windows\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\subjectpreferencespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\subjectpreferencespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\viewmodels\\pages\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\viewmodels\\pages\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\subjectpreferencespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\subjectpreferencespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CEE91E6D-B7C5-4B95-82EC-3C654E12591D}|Services\\Services.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\services\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEE91E6D-B7C5-4B95-82EC-3C654E12591D}|Services\\Services.csproj|solutionrelative:services\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEE91E6D-B7C5-4B95-82EC-3C654E12591D}|Services\\Services.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\services\\contracts\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEE91E6D-B7C5-4B95-82EC-3C654E12591D}|Services\\Services.csproj|solutionrelative:services\\contracts\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6FDEE82-0089-49AE-9813-0BC08B439B83}|SubjectAdministration\\SubjectAdministration.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\subjectadministration\\contracts\\isubjectadministrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FDEE82-0089-49AE-9813-0BC08B439B83}|SubjectAdministration\\SubjectAdministration.csproj|solutionrelative:subjectadministration\\contracts\\isubjectadministrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6FDEE82-0089-49AE-9813-0BC08B439B83}|SubjectAdministration\\SubjectAdministration.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\subjectadministration\\services\\subjectadministrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,24 +39,52 @@
       "RelativeMoniker": "D:0:0:{CBC4F935-FD93-4EE3-B257-FEB7BE759D35}|Authentication\\Authentication.csproj|solutionrelative:authentication\\services\\userauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CEE91E6D-B7C5-4B95-82EC-3C654E12591D}|Services\\Services.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\services\\contracts\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE91E6D-B7C5-4B95-82EC-3C654E12591D}|Services\\Services.csproj|solutionrelative:services\\contracts\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\domain\\dto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\domain\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|solutionrelative:domain\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\domain\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\models\\subject\\subjectpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\models\\subject\\subjectpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\domain\\dto\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\domain\\dto\\allsubjectsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\allsubjectsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\viewmodels\\windows\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\viewmodels\\windows\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBC4F935-FD93-4EE3-B257-FEB7BE759D35}|Authentication\\Authentication.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\authentication\\contracts\\iuserauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBC4F935-FD93-4EE3-B257-FEB7BE759D35}|Authentication\\Authentication.csproj|solutionrelative:authentication\\contracts\\iuserauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6FDEE82-0089-49AE-9813-0BC08B439B83}|SubjectAdministration\\SubjectAdministration.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\subjectadministration\\contracts\\isubjectadministrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6FDEE82-0089-49AE-9813-0BC08B439B83}|SubjectAdministration\\SubjectAdministration.csproj|solutionrelative:subjectadministration\\contracts\\isubjectadministrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\domain\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\models\\subject\\subjectpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\models\\subject\\subjectpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\models\\subject\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,10 +98,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\panai\\AppData\\Local\\Temp\\.vsdbgsrc\\12193583a01f4e6ba4fc42b1d7d2b6775e84fded511752ad7920139c271c979f\\CallSiteFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\domain\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{256297E5-B1BB-493C-921F-256218722AAD}|Domain\\Domain.csproj|solutionrelative:domain\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|d:\\proiecte\\itmarathon2024\\itmarathonfrontend\\itmarathonfrontend\\views\\pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90124473-2C18-4A18-819B-803EB3EDC7C1}|ItMarathonFrontend\\ItMarathonFrontend.csproj|solutionrelative:itmarathonfrontend\\views\\pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -97,11 +109,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 144,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
+              "Title": "AllSubjectsDto.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Dto\\AllSubjectsDto.cs",
+              "RelativeDocumentMoniker": "Domain\\Dto\\AllSubjectsDto.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Dto\\AllSubjectsDto.cs",
+              "RelativeToolTip": "Domain\\Dto\\AllSubjectsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T16:23:13.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SubjectDto.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Dto\\SubjectDto.cs",
+              "RelativeDocumentMoniker": "Domain\\Dto\\SubjectDto.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Dto\\SubjectDto.cs",
+              "RelativeToolTip": "Domain\\Dto\\SubjectDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T16:23:02.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Dto\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Domain\\Dto\\RegisterDto.cs",
+              "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Dto\\RegisterDto.cs",
+              "RelativeToolTip": "Domain\\Dto\\RegisterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T16:09:54.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Windows\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Windows\\MainWindow.xaml.cs",
@@ -114,13 +165,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "CreateUserDto.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Dto\\CreateUserDto.cs",
               "RelativeDocumentMoniker": "Domain\\Dto\\CreateUserDto.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Dto\\CreateUserDto.cs",
               "RelativeToolTip": "Domain\\Dto\\CreateUserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T15:36:57.163Z",
               "EditorCaption": ""
@@ -133,14 +184,14 @@
               "RelativeDocumentMoniker": "Services\\Contracts\\IAdminService.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Services\\Contracts\\IAdminService.cs",
               "RelativeToolTip": "Services\\Contracts\\IAdminService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T15:33:16.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
@@ -153,26 +204,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "ISubjectAdministrationService.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\SubjectAdministration\\Contracts\\ISubjectAdministrationService.cs",
               "RelativeDocumentMoniker": "SubjectAdministration\\Contracts\\ISubjectAdministrationService.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\SubjectAdministration\\Contracts\\ISubjectAdministrationService.cs",
               "RelativeToolTip": "SubjectAdministration\\Contracts\\ISubjectAdministrationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T15:03:26.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "SubjectAdministrationService.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\SubjectAdministration\\Services\\SubjectAdministrationService.cs",
               "RelativeDocumentMoniker": "SubjectAdministration\\Services\\SubjectAdministrationService.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\SubjectAdministration\\Services\\SubjectAdministrationService.cs",
               "RelativeToolTip": "SubjectAdministration\\Services\\SubjectAdministrationService.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAADsAAAA9AAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAtwBYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T14:47:27.245Z",
               "EditorCaption": ""
@@ -185,20 +236,20 @@
               "RelativeDocumentMoniker": "ItMarathonFrontend\\ViewModels\\Pages\\SubjectPreferencesViewModel.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Pages\\SubjectPreferencesViewModel.cs",
               "RelativeToolTip": "ItMarathonFrontend\\ViewModels\\Pages\\SubjectPreferencesViewModel.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAAA0AAACDAAAA",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAUwI0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T14:46:36.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "SubjectPackage.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Models\\Subject\\SubjectPackage.cs",
               "RelativeDocumentMoniker": "ItMarathonFrontend\\Models\\Subject\\SubjectPackage.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Models\\Subject\\SubjectPackage.cs",
               "RelativeToolTip": "ItMarathonFrontend\\Models\\Subject\\SubjectPackage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T14:42:59.053Z",
               "EditorCaption": ""
@@ -217,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Subject.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Models\\Subject\\Subject.cs",
               "RelativeDocumentMoniker": "ItMarathonFrontend\\Models\\Subject\\Subject.cs",
@@ -230,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "CallSiteFactory.cs",
               "DocumentMoniker": "C:\\Users\\panai\\AppData\\Local\\Temp\\.vsdbgsrc\\12193583a01f4e6ba4fc42b1d7d2b6775e84fded511752ad7920139c271c979f\\CallSiteFactory.cs",
               "ToolTip": "C:\\Users\\panai\\AppData\\Local\\Temp\\.vsdbgsrc\\12193583a01f4e6ba4fc42b1d7d2b6775e84fded511752ad7920139c271c979f\\CallSiteFactory.cs",
@@ -241,20 +292,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "AdminService.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Services\\Services\\AdminService.cs",
               "RelativeDocumentMoniker": "Services\\Services\\AdminService.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Services\\Services\\AdminService.cs",
               "RelativeToolTip": "Services\\Services\\AdminService.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAYwC8AAAA0AAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAC8AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T14:18:03.9Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "AdminPage.xaml",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\AdminPage.xaml",
               "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Pages\\AdminPage.xaml",
@@ -266,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Windows\\MainWindow.xaml",
               "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Windows\\MainWindow.xaml",
@@ -278,59 +329,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 11,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "Domain\\UserConfiguration.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\UserConfiguration.cs",
               "RelativeToolTip": "Domain\\UserConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T14:11:26.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "IUserAuthenticationService.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Authentication\\Contracts\\IUserAuthenticationService.cs",
               "RelativeDocumentMoniker": "Authentication\\Contracts\\IUserAuthenticationService.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Authentication\\Contracts\\IUserAuthenticationService.cs",
               "RelativeToolTip": "Authentication\\Contracts\\IUserAuthenticationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T13:35:20.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Dto\\LoginDto.cs",
               "RelativeDocumentMoniker": "Domain\\Dto\\LoginDto.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Domain\\Dto\\LoginDto.cs",
               "RelativeToolTip": "Domain\\Dto\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T13:33:59.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "UserAuthenticationService.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Authentication\\Services\\UserAuthenticationService.cs",
               "RelativeDocumentMoniker": "Authentication\\Services\\UserAuthenticationService.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\Authentication\\Services\\UserAuthenticationService.cs",
               "RelativeToolTip": "Authentication\\Services\\UserAuthenticationService.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAYwCwAAAAIAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAtwDYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T13:33:44.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\App.xaml.cs",
               "RelativeDocumentMoniker": "ItMarathonFrontend\\App.xaml.cs",
@@ -343,33 +394,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Windows\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "ItMarathonFrontend\\ViewModels\\Windows\\MainWindowViewModel.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Windows\\MainWindowViewModel.cs",
               "RelativeToolTip": "ItMarathonFrontend\\ViewModels\\Windows\\MainWindowViewModel.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAowFEAAAALAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAkwHcAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T13:20:54.627Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AdminViewModel.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Pages\\AdminViewModel.cs",
               "RelativeDocumentMoniker": "ItMarathonFrontend\\ViewModels\\Pages\\AdminViewModel.cs",
               "ToolTip": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\ViewModels\\Pages\\AdminViewModel.cs",
               "RelativeToolTip": "ItMarathonFrontend\\ViewModels\\Pages\\AdminViewModel.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAABcAAAB6AAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAE0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T13:20:05.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "AdminPage.xaml.cs",
               "DocumentMoniker": "D:\\proiecte\\ItMarathon2024\\ItMarathonFrontend\\ItMarathonFrontend\\Views\\Pages\\AdminPage.xaml.cs",
               "RelativeDocumentMoniker": "ItMarathonFrontend\\Views\\Pages\\AdminPage.xaml.cs",

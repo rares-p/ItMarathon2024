@@ -16,6 +16,8 @@ namespace ItMarathonFrontend.ViewModels.Windows
         private readonly IUserAuthenticationService _userAuthenticationService;
         private readonly ISnackbarService _snackbarService;
         [ObservableProperty]
+        private string _identifier;
+        [ObservableProperty]
         private string _username;
         [ObservableProperty]
         private string _password;
@@ -94,6 +96,31 @@ namespace ItMarathonFrontend.ViewModels.Windows
             }
             else
                 IsUserLoggedIn = true;
+        }
+
+        [RelayCommand]
+        private async Task OnUserRegister()
+        {
+            var registerResponse = await _userAuthenticationService.Register(Identifier, Username, Password);
+            if (!registerResponse.Success)
+            {
+                _snackbarService.Show("Error!", registerResponse.Error);
+                MessageBox error = new MessageBox()
+                {
+                    Title = "Error!",
+                    Content = registerResponse.Error
+                };
+                await error.ShowDialogAsync();
+            }
+            else
+            {
+                MessageBox done = new MessageBox()
+                {
+                    Title = "Done!",
+                    Content = $"User with identifier {Identifier} registered successfully!"
+            };
+                await done.ShowDialogAsync();
+            }
         }
     }
 }

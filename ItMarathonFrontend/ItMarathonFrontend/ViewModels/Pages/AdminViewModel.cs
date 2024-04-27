@@ -10,6 +10,8 @@ namespace ItMarathonFrontend.ViewModels.Pages;
 
 public partial class AdminViewModel : ObservableObject, INavigationAware
 {
+    [ObservableProperty]
+    private string _createdUserIdentifier = "";
     private readonly IAdminService _adminService;
     private readonly ISnackbarService _snackbarService;
     private readonly UserConfiguration _userConfiguration;
@@ -65,9 +67,19 @@ public partial class AdminViewModel : ObservableObject, INavigationAware
             return;
         }
         Result<CreateUserDto> result = IsCreatedUserAdmin ? await _adminService.CreateAdminUserAsync() : await _adminService.CreateUserAsync(CreatedUser);
-        if(result.Success)
+        if (result.Success)
+        {
             CreatedUser.Identifier = result.Value.identifier;
+            CreatedUserIdentifier = result.Value.identifier;
+        }
         else
             _snackbarService.Show("Couldn't create user!", result.Error);
+    }
+
+
+    [RelayCommand]
+    public void OnCopyIdentifier()
+    {
+        Clipboard.SetText(CreatedUserIdentifier);
     }
 }

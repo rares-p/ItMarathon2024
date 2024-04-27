@@ -52,6 +52,7 @@ public class AdminService : IAdminService
         //    new AuthenticationHeaderValue("Bearer", _userConfiguration.Token);
         var data = new FormUrlEncodedContent(new[]
         {
+            new KeyValuePair<string, string>("userId", _userConfiguration.Id),
             new KeyValuePair<string, string>("role", "1"),
             new KeyValuePair<string, string>("name",  user.Name),
             new KeyValuePair<string, string>("credits", user.Credits.ToString()),
@@ -59,7 +60,7 @@ public class AdminService : IAdminService
             new KeyValuePair<string, string>("year", user.Year.ToString(CultureInfo.InvariantCulture))
         });
         var createUserResponse = await httpClient.PostAsync("identifier/create", data);
-
+        var test = await createUserResponse.Content.ReadAsStringAsync();
         CreateUserDto? response = null;
         try
         {

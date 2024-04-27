@@ -52,6 +52,7 @@ public class UserAuthenticationService : IUserAuthenticationService
             _userConfiguration.Admin = response.role == 1;
             _userConfiguration.Id = response.id;
             _userConfiguration.Identifier = response.identifier;
+            _userConfiguration.Year = response.year;
         }
         catch (Exception ex)
         {
@@ -61,8 +62,42 @@ public class UserAuthenticationService : IUserAuthenticationService
         return new Result<LoginDto>(true, response, "");
     }
 
-    public Task<Result<LoginDto>> Register(string identifier, string username, string password)
+    public async Task<Result<RegisterDto>> Register(string identifier, string username, string password)
     {
-        throw new NotImplementedException();
+        var httpClient = _httpClientFactory.CreateClient("Default");
+        var data = new FormUrlEncodedContent(new[]
+        {
+            new KeyValuePair<string, string>("username", username),
+            new KeyValuePair<string, string>("password", password),
+            new KeyValuePair<string, string>("identifier", identifier)
+        });
+        HttpResponseMessage result;
+        try
+        {
+            result = await httpClient.PostAsync("/users/register", data).ConfigureAwait(false);
+        }
+        catch (Exception e)
+        {
+            return new Result<RegisterDto>(false, null!, e.Message);
+        }
+
+        if (result.StatusCode != HttpStatusCode.Created)
+            return new Result<RegisterDto>(false, null!, "User could not be created");
+
+        if (!result.IsSuccessStatusCode)
+            return new Result<RegisterDto>(false, null!, "Unknown error encountered from server");
+        RegisterDto? response = null;
+        try
+        {
+            response = JsonSerializer.Deserialize<RegisterDto>(await result.Content.ReadAsStringAsync());
+            if (response == null)
+                return new Result<RegisterDto>(false, null!, "Unexpected response from the server");
+        }
+        catch (Exception ex)
+        {
+            return new Result<RegisterDto>(false, null!, "Unexpected response from the server");
+        }
+
+        return new Result<RegisterDto>(true, response, "");
     }
 }

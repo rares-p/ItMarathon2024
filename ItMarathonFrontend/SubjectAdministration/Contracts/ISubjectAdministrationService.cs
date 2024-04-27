@@ -5,6 +5,6 @@ namespace SubjectAdministration.Contracts;
 
 public interface ISubjectAdministrationService
 {
-    Task<Result<List<SubjectDto>>> GetAllSubjects();
+    Task<Result<AllSubjectsDto>> GetAllSubjects();
     Task<Result<HttpResponseMessage>> SendPreferencesAsync(List<string> preferences);
 }
