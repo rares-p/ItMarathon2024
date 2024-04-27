@@ -38,13 +38,13 @@ export class SubjectService {
         }
     }
 
-    public async subjectExists(subjectId: UUID) {
+    public async getSubject(subjectId: UUID) {
         try {
-            return await this.subjectRepository.existsBy({
+            return await this.subjectRepository.findOneBy({
                 id: subjectId
             });
         } catch (err) {
-            return false
+            return undefined;
         }
     }
 

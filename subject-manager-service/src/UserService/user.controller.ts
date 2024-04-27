@@ -1,7 +1,9 @@
-import {Body, Controller, HttpException, HttpStatus, Post} from "@nestjs/common";
+import {Body, Controller, Get, HttpException, HttpStatus, Post, Query, UseGuards} from "@nestjs/common";
 import {UserService} from "./user.service";
 import {CreateUserDto} from "./dto/CreateUser.dto";
 import {LoginDto} from "./dto/Login.dto";
+import {IsAdmin} from "./guards/IsAdmin";
+import {GetAllUsersDto} from "./dto/GetAllUsers.dto";
 
 @Controller('users')
 export class UserController {
@@ -31,5 +33,19 @@ export class UserController {
         }
 
         return response;
+    }
+
+    @Get("all")
+    @UseGuards(IsAdmin)
+    async getAll(@Query() data: GetAllUsersDto) {
+        const response = await this.userService.getAll();
+
+        if (response == undefined) {
+            throw new HttpException("Unexpected error occurred!", HttpStatus.NOT_FOUND);
+        }
+
+        return {
+            users: response
+        };
     }
 }

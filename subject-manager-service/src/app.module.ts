@@ -8,6 +8,8 @@ import { join } from "path";
 import {UserModule} from "./UserService/user.module";
 import {IdentifierModule} from "./IdentifierService/identifier.module";
 import { LoggerModule } from 'nestjs-pino';
+import {SubjectModule} from "./SubjectService/subject.module";
+import {PreferenceModule} from "./PreferenceService/preference.module";
 
 const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
         useClass: TypeOrmConfigService,
@@ -71,7 +73,8 @@ const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
         }),
         UserModule,
         IdentifierModule,
-
+        SubjectModule,
+        PreferenceModule
     ],
 })
 export class AppModule {

@@ -1,5 +1,5 @@
 import {Injectable} from "@nestjs/common";
-import {InjectRepository} from "@nestjs/typeorm";
+import {handleRetry, InjectRepository} from "@nestjs/typeorm";
 import {Repository} from 'typeorm';
 import {UserEntity, UserRole} from "./entities/user.entity";
 import {StudentEntity, Years} from "./entities/student.entity";
@@ -100,12 +100,18 @@ export class UserService {
 
     async getStudent(studentId: UUID) {
         try {
-            const student = await this.userRepository.findOneBy({
+            return await this.userRepository.findOneBy({
                 id: studentId,
                 role: UserRole.STUDENT
-            })
+            });
+        } catch (err) {
+            return undefined;
+        }
+    }
 
-            return student;
+    async getAll() {
+        try {
+            return await this.userRepository.find();
         } catch (err) {
             return undefined;
         }

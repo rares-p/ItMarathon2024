@@ -21,9 +21,7 @@ export class IdentifierController {
         else if (typeof response == "string")
             throw new HttpException(response, HttpStatus.BAD_REQUEST);
 
-        return {
-            identifier: response
-        }
+        return response;
     }
 
     // @Post("use")

@@ -1,4 +1,5 @@
 import {Column, Entity, PrimaryColumn} from "typeorm";
+import {UUID} from "../../Utils/Types";
 
 @Entity({
     name: "preferences"
@@ -6,11 +7,11 @@ import {Column, Entity, PrimaryColumn} from "typeorm";
 export class PreferenceEntity {
 
     @PrimaryColumn()
-    studentId: string;
+    studentId: UUID;
 
     @PrimaryColumn()
     slot: number;
 
     @Column()
-    subjectId: string;
+    subjectId: UUID;
 }

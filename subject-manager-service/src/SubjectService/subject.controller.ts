@@ -31,7 +31,9 @@ export class SubjectController {
             throw new HttpException(response, HttpStatus.BAD_REQUEST);
         }
 
-        return response;
+        return {
+            subjects: response
+        };
     }
 
 }
