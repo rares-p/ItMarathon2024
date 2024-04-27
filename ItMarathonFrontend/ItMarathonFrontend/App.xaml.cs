@@ -12,8 +12,17 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.IO;
+using System.Net.Http.Headers;
 using System.Reflection;
 using System.Windows.Threading;
+using Authentication.Contracts;
+using Authentication.Services;
+using Domain;
+using ItMarathonFrontend.Resources;
+using Services.Contracts;
+using Services.Services;
+using SubjectAdministration.Contracts;
+using SubjectAdministration.Services;
 
 namespace ItMarathonFrontend
 {
@@ -29,7 +38,11 @@ namespace ItMarathonFrontend
         // https://docs.microsoft.com/dotnet/core/extensions/logging
         private static readonly IHost _host = Host
             .CreateDefaultBuilder()
-            .ConfigureAppConfiguration(c => { c.SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly()!.Location)); })
+            .ConfigureAppConfiguration(c =>
+            {
+                c.SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly()!.Location));
+                c.Properties.Add("BaseUrl", "http://www.testing.com");
+            })
             .ConfigureServices((context, services) =>
             {
                 services.AddHostedService<ApplicationHostService>();
@@ -46,6 +59,20 @@ namespace ItMarathonFrontend
                 services.AddSingleton<DataViewModel>();
                 services.AddSingleton<SettingsPage>();
                 services.AddSingleton<SettingsViewModel>();
+                services.AddSingleton<SubjectPreferencesPage>();
+                services.AddSingleton<SubjectPreferencesViewModel>();
+                services.AddSingleton<AdminPage>();
+                services.AddSingleton<AdminViewModel>();
+
+                services.AddSingleton<UserConfiguration>();
+
+                services.AddTransient<IUserAuthenticationService, UserAuthenticationService>();
+                services.AddTransient<ISubjectAdministrationService, SubjectAdministrationService>();
+                services.AddTransient<IAdminService, AdminService>();
+                services.AddHttpClient("Default", httpClient =>
+                {
+                    httpClient.BaseAddress = new Uri("http://192.168.85.178:3000/");
+                });
             }).Build();
 
         /// <summary>

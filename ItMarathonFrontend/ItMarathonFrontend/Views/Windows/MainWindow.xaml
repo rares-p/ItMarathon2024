@@ -20,7 +20,12 @@
     WindowBackdropType="Mica"
     WindowCornerPreference="Round"
     WindowStartupLocation="CenterScreen"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    xmlns:converter="clr-namespace:ItMarathonFrontend.Helpers">
+    <ui:FluentWindow.Resources>
+        <converter:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <converter:BooleanToVisibilityConverterReversed x:Key="BooleanToVisibilityConverterReversed" />
+    </ui:FluentWindow.Resources>
     <ui:FluentWindow.InputBindings>
         <KeyBinding
             Key="F"
@@ -39,6 +44,28 @@
             </ui:TitleBar.Icon>
         </ui:TitleBar>
 
+        <Grid Visibility="{Binding ViewModel.IsUserLoggedIn, Converter={StaticResource BooleanToVisibilityConverterReversed}}"
+              HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center" x:Name="LoginForm">
+                <ui:TextBlock Text="Username" HorizontalAlignment="Center" />
+                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center" Text="{Binding ViewModel.Username}"/>
+                <ui:TextBlock Text="Password" HorizontalAlignment="Center" Margin="0 5 0 0 "/>
+                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center" Text="{Binding ViewModel.Password}"/>
+                <ui:Button Content="Sign in" Appearance="Primary" Command="{Binding ViewModel.UserSignInCommand}" HorizontalAlignment="Center" Margin="0 5 0 0 "/>
+                <ui:Button Content="Register" Appearance="Secondary" Click="SwitchToRegister" HorizontalAlignment="Center" Margin="0 20 0 0 "/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" x:Name="RegisterForm" Visibility="Collapsed">
+                <ui:TextBlock Text="Identifier" HorizontalAlignment="Center" />
+                <ui:TextBox Margin="0 5 0 0" MinWidth="200" HorizontalAlignment="Center" Text="{Binding ViewModel.Identifier}"/>
+                <ui:TextBlock Text="UserName" HorizontalAlignment="Center"  Margin="0 5 0 0 "/>
+                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center" Text="{Binding ViewModel.Username}"/>
+                <ui:TextBlock Text="Password" HorizontalAlignment="Center" Margin="0 5 0 0 " />
+                <ui:TextBox Margin="0 5 0 0 " MinWidth="200" HorizontalAlignment="Center" Text="{Binding ViewModel.Password}"/>
+                <ui:Button Content="Register" Appearance="Primary" Command="{Binding ViewModel.UserSignInCommand}" HorizontalAlignment="Center" Margin="0 5 0 0 "/>
+                <ui:Button Content="Log In" Appearance="Secondary" Click="SwitchToLogIn" HorizontalAlignment="Center" Margin="0 20 0 0 "/>
+            </StackPanel>
+        </Grid>
+
         <ui:NavigationView
             x:Name="NavigationView"
             Padding="42,0,42,0"
@@ -50,7 +77,8 @@
             MenuItemsSource="{Binding ViewModel.MenuItems, Mode=OneWay}"
             OpenPaneLength="310"
             PaneDisplayMode="Left"
-            TitleBar="{Binding ElementName=TitleBar, Mode=OneWay}">
+            TitleBar="{Binding ElementName=TitleBar, Mode=OneWay}"
+            Visibility="{Binding ViewModel.IsUserLoggedIn, Converter={StaticResource BooleanToVisibilityConverter}}">
             <ui:NavigationView.Header>
                 <ui:BreadcrumbBar x:Name="BreadcrumbBar" Margin="42,32,42,20" />
             </ui:NavigationView.Header>
